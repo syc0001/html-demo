@@ -1,0 +1,120 @@
+#content > .list > .home {
+  background: url(../img/bg1.jpg) no-repeat;
+}
+#content > .list > .home .home1 {   
+  width: 100%;
+  height: 100%;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+#content > .list > .home .home1 > li {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  visibility: hidden;
+}
+#content > .list > .home .home1 > li:nth-child(1) {
+  background: #dc6c5f;
+}
+#content > .list > .home .home1 > li:nth-child(2) {
+  background: #95dc84;
+}
+#content > .list > .home .home1 > li:nth-child(3) {
+  background: #64b9d2;
+}
+#content > .list > .home .home1 > li:nth-child(4) {
+  background: #000000;
+}
+#content > .list > .home .home1 > li > div {
+  color: white;
+  text-align: center;
+  margin-top: 200px;
+}
+#content > .list > .home .home1 > li.active {
+  visibility: visible;
+}
+#content > .list > .home .home2 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+#content > .list > .home .home2 > li {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  display: inline-block;
+  box-shadow: 0 0 4px rgba(25, 25, 25, 0.8);
+  cursor: pointer;
+}
+#content > .list > .home .home2 > li.active {
+  background: white;
+  cursor: default;
+}
+/*从左往右 leftHide  rightShow*/
+#content > .list > .home .home1 > li.leftHide {
+  visibility: hidden;
+  animation: leftHide 1s 1 linear;
+}
+#content > .list > .home .home1 > li.rightShow {
+  visibility: visible;
+  animation: rightShow 1s 1 linear;
+}
+@keyframes leftHide {
+  0% {
+    visibility: visible;
+  }
+  50% {
+    transform: translateX(-40%) rotateY(30deg) scale(0.8);
+  }
+  100% {
+    transform: translateZ(-200px);
+  }
+}
+@keyframes rightShow {
+  0% {
+    visibility: hidden;
+    transform: translateZ(-200px);
+  }
+  50% {
+    transform: translateX(40%) rotateY(-30deg) scale(0.8);
+  }
+  100% {
+  }
+}
+/*从右往左 leftShow  rightHide*/
+#content > .list > .home .home1 > li.leftShow {
+  visibility: visible;
+  animation: leftShow 1s 1 linear;
+}
+#content > .list > .home .home1 > li.rightHide {
+  visibility: hidden;
+  animation: rightHide 1s 1 linear;
+}
+@keyframes leftShow {
+  0% {
+    visibility: hidden;
+    transform: translateZ(-200px);
+  }
+  50% {
+    transform: translateX(-40%) rotateY(30deg) scale(0.8);
+  }
+  100% {
+  }
+}
+@keyframes rightHide {
+  0% {
+    visibility: visible;
+  }
+  50% {
+    transform: translateX(40%) rotateY(-30deg) scale(0.8);
+  }
+  100% {
+    transform: translateZ(-200px);
+  }
+}

@@ -1,0 +1,60 @@
+#content > .list > .team {
+  background: url(../img/bg5.jpg) no-repeat;
+}
+#content > .list > .team .team1 {
+  width: 400px;
+  margin: 50px;
+  float: left;
+}
+#content > .list > .team .team2 {
+  width: 400px;
+  margin: 50px;
+  float: right;
+}
+#content > .list > .team .team3 {
+  width: 944px;
+  height: 448px;
+  position: absolute;
+  left: 50%;
+  top: 250px;
+  margin-left: -472px;
+}
+#content > .list > .team .team3 ul {
+  position: relative;
+  height: 100%;
+}
+#content > .list > .team .team3 ul > li {
+  width: 118px;
+  height: 100%;
+  float: left;
+  transition: opacity 1s;
+  background: url(../img/team.png) no-repeat;
+}
+#content > .list > .team .team3 ul > li:nth-child(1) {
+  background-position: 0, 0;
+}
+#content > .list > .team .team3 ul > li:nth-child(2) {
+  background-position: -118px, 0;
+}
+#content > .list > .team .team3 ul > li:nth-child(3) {
+  background-position: -236px, 0;
+}
+#content > .list > .team .team3 ul > li:nth-child(4) {
+  background-position: -354px, 0;
+}
+#content > .list > .team .team3 ul > li:nth-child(5) {
+  background-position: -472px, 0;
+}
+#content > .list > .team .team3 ul > li:nth-child(6) {
+  background-position: -590px, 0;
+}
+#content > .list > .team .team3 ul > li:nth-child(7) {
+  background-position: -708px, 0;
+}
+#content > .list > .team .team3 ul > li:nth-child(8) {
+  background-position: -826px, 0;
+}
+#content > .list > .team canvas {
+  position: absolute;
+  top: 0px;
+}

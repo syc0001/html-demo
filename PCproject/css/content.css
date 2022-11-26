@@ -1,0 +1,28 @@
+#content {
+  background-color: gray;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+#content > .list {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  transition: top 1s;
+}
+#content > .list > li {
+  position: relative;
+  background-position: 50% 50% !important;
+  overflow: hidden;
+}
+#content > .list > li > section {
+  width: 1100px;
+  height: 520px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}

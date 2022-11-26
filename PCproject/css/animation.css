@@ -1,0 +1,64 @@
+
+      #content > .list > .home .home1,
+      #content > .list > .home .home2 {
+        transition: transform 1s, opacity 1s;
+      }
+      #content .course .plane1 {
+        width: 359px;
+        height: 283px;
+        background: url(../img/plane1.png) no-repeat;
+        position: absolute;
+        left: 300px;
+        top: -100px;
+        transition: 1s;
+      }
+      #content .course .plane2 {
+        width: 309px;
+        height: 249px;
+        background: url(../img/plane2.png) no-repeat;
+        position: absolute;
+        left: -100px;
+        top: 200px;
+        transition: 1s;
+      }
+      #content .course .plane3 {
+        width: 230px;
+        height: 182px;
+        background: url(../img/plane3.png) no-repeat;
+        position: absolute;
+        left: 300px;
+        top: 400px;
+        transition: 1s;
+      }
+      #content .works .pencel1 {
+        width: 180px;
+        height: 97px;
+        background: url(../img/pencel1.png) no-repeat;
+        position: absolute;
+        transition: 1s;
+        left: 500px;
+        top: 0;
+      }
+      #content .works .pencel2 {
+        width: 268px;
+        height: 38px;
+        background: url(../img/pencel2.png) no-repeat;
+        position: absolute;
+        transition: 1s;
+        left: 300px;
+        top: 250px;
+      }
+      #content .works .pencel3 {
+        width: 441px;
+        height: 231px;
+        background: url(../img/pencel3.png) no-repeat;
+        position: absolute;
+        transition: 1s;
+        left: 650px;
+        top: 300px;
+      }
+      #content > .list > .about .about3 > .item,
+      #content > .list > .team .team1,
+      #content > .list > .team .team2 {
+        transition: 1s transform;
+      }

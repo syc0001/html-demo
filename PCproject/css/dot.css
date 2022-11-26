@@ -1,0 +1,15 @@
+#content > .dot {
+    position: fixed;
+    right: 0;
+    top: 50%;
+  }
+  #content > .dot > li {
+    width: 10px;
+    height: 10px;
+    border: 5px solid pink;
+    margin-top: 10px;
+    border-radius: 50%;
+  }
+  #content > .dot > li.active {
+    background: white;
+  }

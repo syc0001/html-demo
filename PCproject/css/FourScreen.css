@@ -1,0 +1,65 @@
+#content > .list > .about {
+  background: url(../img/bg3.jpg) no-repeat;
+}
+#content > .list > .about .about1 {
+  margin: 50px 0 100px 50px;
+}
+#content > .list > .about .about2 {
+  margin-left: 50px;
+  width: 400px;
+}
+#content > .list > .about .about3 > .item {
+  width: 260px;
+  height: 200px;
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  position: absolute;
+  z-index: 2;
+  overflow: hidden;
+}
+#content > .list > .about .about3 > .item:nth-child(1) {
+  left: 750px;
+  top: 50px;
+}
+#content > .list > .about .about3 > .item:nth-child(2) {
+  left: 600px;
+  top: 290px;
+}
+#content > .list > .about .about3 > .item > span,
+#content > .list > .about .about3 > .item > ul {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+#content > .list > .about .about3 > .item > ul > li {
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+#content > .list > .about .about3 > .item > ul > li > img {
+  position: absolute;
+  transition: 1s top, 1s left;
+}
+#content > .list > .about .about3 > .item:nth-child(1) > span {
+  background: url(../img/about2.jpg) no-repeat;
+  transform: scale(1.5);
+  transition: transform 1s;
+}
+#content > .list > .about .about3 > .item:nth-child(2) > span {
+  background: url(../img/about4.jpg) no-repeat;
+  transform: scale(1.5);
+  transition: transform 1s;
+}
+#content > .list > .about .about3 > .item:hover span {
+  transform: scale(1);
+}
+#content > .list > .about .about4 {
+  width: 357px;
+  height: 998px;
+  position: absolute;
+  left: 50%;
+  top: -100px;
+  background: url(../img/greenLine.png) no-repeat;
+}

@@ -1,0 +1,82 @@
+#content > .list > .works {
+  background: url(../img/bg4.jpg) no-repeat;
+}
+#content > .list > .works .works1 {
+  margin: 50px 0px 100px 50px;
+  position: relative;
+  z-index: 2;
+}
+#content > .list > .works .works2 {
+  margin-left: 50px;
+  position: relative;
+  z-index: 2;
+}
+#content > .list > .works .works2 > .item {
+  float: left;
+  width: 220px;
+  height: 133px;
+  margin: 0 1px;
+  position: relative;
+  overflow: hidden;
+}
+#content > .list > .works .works2 > .item:last-of-type {
+  float: left;
+  width: 332px;
+  height: 133px;
+}
+#content > .list > .works .works2 > .item .mask {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: deeppink;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: black;
+  opacity: 0;
+  color: white;
+  transition: opacity 1s;
+}
+#content > .list > .works .works2 > .item .mask .icon {
+  width: 32px;
+  height: 34px;
+  background: pink;
+  margin: 0 auto;
+  margin-top: 10px;
+  background: url(../img/zoomico.png) no-repeat;
+  transition: background-position 1s;
+}
+#content > .list > .works .works2 > .item img {
+  transition: transform 1s;
+}
+#content > .list > .works .works2 > .item .mask .icon:hover {
+  background-position: 0 -35px;
+}
+#content > .list > .works .works2 > .item:hover .mask {
+  opacity: 0.8;
+}
+#content > .list > .works .works2 > .item:hover img {
+  transform: rotate(30deg) scale(1.5);
+}
+#content > .list > .works .works3 {
+  width: 167px;
+  height: 191px;
+  background: url(../img/robot.png) no-repeat;
+  position: absolute;
+  left: 900px;
+  top: 170px;
+  z-index: 2;
+  animation: works3Move 4s linear infinite;
+}
+@keyframes works3Move {
+  49% {
+    transform: translateX(-490px) rotateY(0deg);
+  }
+  50% {
+    transform: translateX(-500px) rotateY(180deg);
+  }
+  100% {
+    transform: translateX(0px) rotateY(180deg);
+  }
+}
