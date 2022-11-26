@@ -1,0 +1,22 @@
+@import url("../lib/less/common.less");
+@fontSize: 50px;
+@addWH: 60px;
+body {
+  .center();
+}
+
+.bg {
+  background: url(./img/blurry.avif) no-repeat center center/cover;
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  width: calc(100vw + @addWH);
+  height: calc(100vh + @addWH);
+  filter: blur(0px);
+  z-index: -1;
+}
+
+.loading-text {
+  font-size: @fontSize;
+  color: #bfa;
+}

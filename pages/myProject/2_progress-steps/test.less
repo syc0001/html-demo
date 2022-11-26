@@ -1,0 +1,77 @@
+@import url("../lib/less/common.less");
+
+@lineFill: #3498db;
+@lineEmpty: #e0e0e0;
+
+body {
+  .center();
+}
+
+.container {
+  text-align: center;
+  > .progress-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 350px;
+    max-width: 100%;
+    &::before {
+      content: "";
+      background-color: @lineEmpty;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      height: 4px;
+      width: 100%;
+      z-index: -1;
+    }
+    > .move {
+      background-color: @lineFill;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      height: 4px;
+      width: 0%;
+      z-index: -1;
+      transition: 0.4s ease;
+    }
+    > .circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #fff;
+      color: #999;
+      border: 3px solid @lineEmpty;
+      transition: 0.4s ease;
+      &.active {
+        border-color: @lineFill;
+      }
+    }
+  }
+  .btn {
+    background-color: @lineFill;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    border-radius: 6px;
+    margin: 5px;
+    padding: 8px 30px;
+    font-size: 14px;
+    &:active {
+      transform: scale(0.98);
+    }
+    &:focus {
+      outline: 0;
+    }
+    &:disabled {
+      cursor: not-allowed;
+      background-color: @lineEmpty;
+    }
+  }
+}
