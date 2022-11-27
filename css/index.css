@@ -144,3 +144,16 @@ header {
     transform: scale(1);
   }
 }
+@media (max-width: 700px) {
+  header {
+    font-size: 20px;
+  }
+  .container > .project-head > .paragraph > span {
+    text-align: center;
+    font-size: 25px;
+  }
+  .container > .project-list > .row > .column-item {
+    width: 100%;
+    height: 30vh;
+  }
+}
