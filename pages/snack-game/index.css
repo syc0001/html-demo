@@ -36,8 +36,6 @@ header {
   width: 10px;
   height: 10px;
   position: absolute;
-  top: 100px;
-  left: 120px;
   display: flex;
   flex-flow: wrap;
 }

@@ -26,6 +26,14 @@ let level = 0;
 /*
     食物的坐标应该在0-290之间
 */
+
+(function () {
+  food.style.left = Math.floor(Math.random() * 30) * 10 + "px";
+  food.style.top = Math.floor(Math.random() * 30) * 10 + "px";
+  snakes[0].style.left = Math.floor(Math.random() * 30) * 10 + "px";
+  snakes[0].style.top = Math.floor(Math.random() * 30) * 10 + "px";
+})();
+
 function changeFood() {
   // 生成0-29之间的随机数
   const x = Math.floor(Math.random() * 30) * 10;
