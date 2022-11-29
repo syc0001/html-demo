@@ -151,11 +151,12 @@ header {
       }
     }
     > .project-list {
-      > .row {
-        > .column-item {
-          width: 100%;
-          height: 30vh;
-        }
+      > .item {
+        width: 100%;
+        height: 30vh;
+      }
+      > .item-null {
+        display: none;
       }
     }
   }
@@ -176,11 +177,35 @@ header {
       }
     }
     > .project-list {
-      > .row {
-        > .column-item {
-          width: 100%;
-          height: 40vh;
+      > .item {
+        width: 50%;
+        height: 40vh;
+      }
+    }
+  }
+}
+
+@media (max-width: 1500px) and (min-width: 1200px) {
+  header {
+    font-size: 2.5rem;
+  }
+  .container {
+    > .project-head {
+      > .paragraph {
+        > span {
+          text-align: center;
+          font-size: 2.5rem;
+          animation: word-transition-mid 2s infinite;
         }
+      }
+    }
+    > .project-list {
+      > .item {
+        width: 33.3%;
+        height: 40vh;
+      }
+      > .item-null {
+        display: none;
       }
     }
   }

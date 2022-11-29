@@ -54,6 +54,24 @@ header {
   justify-content: space-between;
   font: bold 20px courier;
 }
+#main > #info > #reload {
+  width: 80px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: lightgray;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+#main > #info > #reload > span {
+  display: block;
+  font-size: 10px;
+}
+#main > #info > #reload:hover {
+  background-color: gray;
+  transform: scale(0.95);
+}
 .control-buttons {
   position: relative;
   margin: -5vh auto;
@@ -105,7 +123,7 @@ header {
   font-size: 2rem;
   line-height: 10vh;
 }
-.control-buttons > div:hover {
+.control-buttons > div:active {
   color: white;
   background-color: blue !important;
   transform: scale(0.95);

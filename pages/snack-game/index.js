@@ -88,6 +88,9 @@ document.addEventListener("keydown", (event) => {
     }
   }
 });
+document.getElementById("reload").addEventListener("click", () => {
+  location.reload(false);
+});
 
 for (let i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener("click", () => {
@@ -162,7 +165,9 @@ setTimeout(function move() {
 
   //判断是否撞墙
   if (x < 0 || x > 290 || y < 0 || y > 290) {
-    alert("撞墙了！游戏结束！");
+    if (confirm("撞墙了！游戏结束！是否重新开始游戏")) {
+      location.reload(false);
+    }
     // 游戏结束
     return;
   }
@@ -170,7 +175,9 @@ setTimeout(function move() {
   // 判断是否撞到自己
   for (let i = 0; i < snakes.length - 1; i++) {
     if (snakes[i].offsetLeft === x && snakes[i].offsetTop === y) {
-      alert("撞到自己了，游戏结束！");
+      if (confirm("撞到自己了，游戏结束！是否重新开始游戏")) {
+        location.reload(false);
+      }
       return;
     }
   }

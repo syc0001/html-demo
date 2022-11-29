@@ -140,9 +140,12 @@ header {
     font-size: 25px;
     animation: word-transition-small 2s infinite;
   }
-  .container > .project-list > .row > .column-item {
+  .container > .project-list > .item {
     width: 100%;
     height: 30vh;
+  }
+  .container > .project-list > .item-null {
+    display: none;
   }
 }
 @media (max-width: 1200px) and (min-width: 768px) {
@@ -154,9 +157,26 @@ header {
     font-size: 2rem;
     animation: word-transition-mid 2s infinite;
   }
-  .container > .project-list > .row > .column-item {
-    width: 100%;
+  .container > .project-list > .item {
+    width: 50%;
     height: 40vh;
+  }
+}
+@media (max-width: 1500px) and (min-width: 1200px) {
+  header {
+    font-size: 2.5rem;
+  }
+  .container > .project-head > .paragraph > span {
+    text-align: center;
+    font-size: 2.5rem;
+    animation: word-transition-mid 2s infinite;
+  }
+  .container > .project-list > .item {
+    width: 33.3%;
+    height: 40vh;
+  }
+  .container > .project-list > .item-null {
+    display: none;
   }
 }
 @keyframes word-transition-small {
