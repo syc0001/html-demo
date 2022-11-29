@@ -89,6 +89,7 @@ const reObj = {
 */
 document.addEventListener("keydown", (event) => {
   if (keyActive && keyArr.includes(event.key)) {
+    event.preventDefault();
     if (snakes.length < 2 || reObj[dir] !== event.key) {
       // 设置方向
       dir = event.key;
